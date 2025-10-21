@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Solar</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+            background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTlwcXl4amNwbmI2bnFyMm81dnhlbGd1YnhvM3RqdzNkZG5kZWQxcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/h8sRbOtj55JACfGn8R/giphy.gif');
+            filter: contrast(120%) brightness(110%) saturate(120%);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        #conteudo {
+            display: none;
+            margin-top: 20px;
+            color: white;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            color: #f2099d;
+            background-color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        details {
+            margin: 10px auto;
+            width: 300px;
+            text-align: left;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        summary {
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        h1 {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Começar a estudar</h1>
+
+    <center>
+        <button onclick="alternarConteudo()">Iniciar Estudo</button>
+    </center>
+
+    <div id="conteudo">
+        <details>
+            <summary>🟡 Mercúrio - O mais próximo do Sol</summary>
+            <p>Mercúrio é o planeta mais próximo do Sol e não possui atmosfera significativa, o que resulta em grandes variações de temperatura.</p>
+        </details>
+        <details>
+            <summary>🟠 Vênus - Planeta Quente</summary>
+            <p>Vênus é o segundo planeta do Sistema Solar e é conhecido por ser o mais quente, devido à sua densa atmosfera de dióxido de carbono que causa um efeito estufa intenso.</p>
+        </details>
+        <details>
+            <summary>🌍 Terra - Nosso Planeta</summary>
+            <p>A Terra é o único planeta conhecido que tem vida. Ela possui água em estado líquido e uma atmosfera rica em oxigênio.</p>
+        </details>
+        <details>
+            <summary>🔴 Marte - Planeta Vermelho</summary>
+            <p>Marte é vermelho por causa do óxido de ferro em sua superfície. É um dos planetas mais estudados para possível colonização.</p>
+        </details>
+        <details>
+            <summary>🟤 Júpiter - O Maior Planeta</summary>
+            <p>Júpiter é o maior planeta do Sistema Solar. É um gigante gasoso composto principalmente de hidrogênio e hélio, com uma grande mancha vermelha que é uma tempestade gigante.</p>
+        </details>
+        <details>
+            <summary>🪐 Saturno - O Senhor dos Anéis</summary>
+            <p>Saturno é conhecido por seus impressionantes anéis compostos por gelo e rochas. Também é um gigante gasoso, como Júpiter.</p>
+        </details>
+        <details>
+            <summary>🔵 Urano - O Gigante Gelado</summary>
+            <p>Urano tem uma coloração azul-esverdeada devido ao metano em sua atmosfera. Ele gira de lado, com seu eixo praticamente paralelo à órbita.</p>
+        </details>
+        <details>
+            <summary>🔵 Netuno - O mais distante</summary>
+            <p>Netuno é o planeta mais distante do Sol. Possui ventos extremamente fortes e é semelhante a Urano em composição.</p>
+        </details>
+    </div>
+
+    <script>
+        function alternarConteudo() {
+            const conteudo = document.getElementById('conteudo');
+            if (conteudo.style.display === 'none' || conteudo.style.display === '') {
+                conteudo.style.display = 'block';
+            } else {
+                conteudo.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+</html>
